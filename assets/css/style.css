@@ -1,14 +1,13 @@
 .icon {
-    color: #ff4d4d;
+    color: red;
 }
 
 .icon:hover {
-    color: #800000;
+    color: maroon;
 }
 
 body {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #e1e1e1;
 }
 
 abbr {
@@ -16,8 +15,7 @@ abbr {
     cursor: pointer;
     text-decoration: none;
 }
-
-abbr:hover {
+abbr:hover{
     cursor: pointer;
 }
 
@@ -26,8 +24,8 @@ abbr:hover::after {
     left: 100%;
     display: block;
     padding: 10px;
-    background: #ffd700;
-    color: #000;
+    background: #FFDF00;
+    color: black;
     content: attr(title);
     width: 150px;
     border-radius: 3px;
@@ -35,7 +33,7 @@ abbr:hover::after {
 }
 
 .card-header {
-    background-color: #a6a6a6;
+    background-color: rgb(233, 199, 155);
     padding-left: 15px;
     padding-right: 15px;
     text-transform: capitalize;
@@ -51,32 +49,43 @@ abbr:hover::after {
     padding-bottom: 500px;
 }
 
-#progress,
-#creator {
+#progress {
+
+    bottom: 22px;
+    right: 22px;
+    border-radius: 50%;
+    margin: 13px 0 0 0;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+#creator,
+#progress {
     border: 0;
     border-radius: 0;
-    background: #406f66;
+    background: #728986;
     outline: none;
     color: #fff;
     transition: background .15s ease;
+
 }
 
 .dot {
     height: 70px;
     width: 70px;
-    background-color: #444;
+    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
 }
 
 .App {
     text-align: center;
-    color: #ff4d4d;
+    color: red;
 }
 
 .card-head2 {
-    background-color: #1a1a1a;
-    color: #ccc;
+    background-color: #e1e1e1;
+    color: #222;
     font-weight: 700;
     padding: 5px 15px;
     font-size: 13px;
@@ -92,19 +101,19 @@ abbr:hover::after {
     display: grid;
     place-items: center;
     cursor: pointer;
-    background: conic-gradient(#ff69b4 360deg, #d3a0f7 360deg);
+    background: conic-gradient(rgb(105, 105, 195) 360deg, rgb(202, 220, 255) 360deg);
 }
 
-.circular-progress:hover::before {
-    background-color: conic-gradient(#800080 360deg);
+.circular-progress::before:hover {
+    background-color: conic-gradient(rgb(130, 130, 243) 360deg);
 }
 
-.circular-progress::before {
+.circular-progress:before {
     content: "";
     position: absolute;
     height: 84%;
     width: 84%;
-    background-color: #000;
+    background-color: #ffffff;
     border-radius: 50%;
 }
 
@@ -112,10 +121,11 @@ abbr:hover::after {
     position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-    color: #d4af37;
+    color: #9a5281;
     font-weight: bold;
     text-align: center;
     padding: 10px;
+
 }
 
 .habit-days {
@@ -125,9 +135,8 @@ abbr:hover::after {
 
 .input-here {
     border: 0px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #aaa;
     border-radius: 0%;
     font-size: 24px;
     padding-left: 5px;
-    color: #fff;
 }
